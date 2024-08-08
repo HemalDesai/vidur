@@ -6,7 +6,7 @@
       <!-- Form -->
       <form class="justify-center mt-10">
         <div class="space-y-2 text-center">
-          <label class="text-sm text-zinc-800" for="one-time-key">To get started, enter the One-Time setup
+          <label id="one-time-key" class="text-sm text-zinc-800" for="one-time-key">To get started, enter the One-Time setup
               code.</label>
             <input id="one-time-key" class="form-input w-full" type="text"
               placeholder="vidur-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" />

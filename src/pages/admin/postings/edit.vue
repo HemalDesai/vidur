@@ -142,19 +142,19 @@ const onDelete = async () => {
       <div class="px-4">
         <div class="mx-auto mt-4">
           <div>
-            <label class="block text-sm font-medium mb-1" for="title">Title <span class="text-rose-500">*</span></label>
+            <label id="title" class="block text-sm font-medium mb-1" for="title">Title <span class="text-rose-500">*</span></label>
             <input id="title" class="form-input w-full" type="text" placeholder="Senior Software Engineer"
               v-model="title" :disabled="isSubmitting" />
             <div class="text-xs mt-1 text-rose-500">{{ errors.title }}</div>
           </div>
           <div class="mt-4">
-            <label class="block text-sm font-medium mb-1" for="tags-csv">Tags (CSV)</label>
+            <label id="tags-csv" class="block text-sm font-medium mb-1" for="tags-csv">Tags (CSV)</label>
             <input id="tags-csv" class="form-input w-full" type="text" placeholder="Remote, Full Time, San Fransisco"
               v-model="tagsCSV" :disabled="isSubmitting" />
             <div class="text-xs mt-1 text-rose-500">{{ errors.tagsCSV }}</div>
           </div>
           <div class="mt-4">
-            <label class="block text-sm font-medium mb-1" for="jobdescription">Job Description</label>
+            <label id="jobdescription" class="block text-sm font-medium mb-1" for="jobdescription">Job Description</label>
             <textarea id="jobdescription" class="form-textarea w-full focus:border-zinc-300" rows="6" v-model="contents"
               placeholder="We want someone who…" :disabled="isSubmitting"></textarea>
             <div class="text-xs mt-1 text-rose-500">{{ errors.contents }}</div>

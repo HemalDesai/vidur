@@ -78,7 +78,7 @@ defineExpose({
     <form class="flex flex-col items-start" @submit="onSubmit">
 
       <div class="flex flex-col justify-items-start w-4/5">
-        <label class="block text-sm flex" for="title">Title <span class="text-rose-500">*</span></label>
+        <label id="title" class="block text-sm flex" for="title">Title <span class="text-rose-500">*</span></label>
         <div class="flex">
           <input id="title" class="input-custom" placeholder="My External ATS Provider" type="text" v-model="title"
             :disabled="isSubmitting" />
